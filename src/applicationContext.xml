@@ -13,7 +13,9 @@
         <bean
                 id="myAccount"
                 class="model.CurrentAccount"
-                autowire="byName">
+                autowire="byName"
+                scope="singleton"
+                >
                 <!--<property name="creditCard" ref="myCard"/>-->
         </bean>
 </beans>
