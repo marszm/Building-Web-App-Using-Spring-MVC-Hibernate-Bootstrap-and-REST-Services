@@ -1,6 +1,4 @@
 import model.Account;
-import model.CurrentAccount;
-import model.SavingAccount;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MyBankApp {
