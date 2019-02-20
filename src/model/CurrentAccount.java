@@ -2,6 +2,12 @@ package model;
 
 public class CurrentAccount implements Account {
 
+    private Card creditCard;
+
+    public void setCreditCard(Card creditCard) {
+        this.creditCard = creditCard;
+    }
+
     @Override
     public String createAccount() {
         return "current account created successfully !!!";
@@ -9,6 +15,6 @@ public class CurrentAccount implements Account {
 
     @Override
     public String cardDetails() {
-        return null;
+        return this.creditCard.cardDetails();
     }
 }
