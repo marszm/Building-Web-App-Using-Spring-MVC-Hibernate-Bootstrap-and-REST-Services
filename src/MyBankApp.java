@@ -8,7 +8,8 @@ public class MyBankApp {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Account account = context.getBean("myAccount",Account.class);
         System.out.println(account.createAccount());
-        System.out.println("fdsfsd");
+        System.out.println(account.cardDetails());
+//        System.out.println("fdsfsd");
     }
 }
 // Spring inversion of control
